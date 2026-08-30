@@ -360,6 +360,36 @@ The poster provides the high-level workflow and methodology, while this reposito
 
 #### Poster: REDCap → Power BI ETL and data-minimization approaches
 
+# Final GitHub Story
+
+```
+                    REDCAP
+                      │
+                      ▼
+              ┌───────────────┐
+              │   REDCap API  │
+              └───────┬───────┘
+                      │
+          ┌───────────┼───────────┐
+          │           │           │
+          ▼           ▼           ▼
+       Method 1    Method 2    Method 3
+       Direct      Field       Report
+       API         Selection   Minimization
+          │           │           │
+          └───────────┼───────────┘
+                      ▼
+                Power Query
+                    (M)
+                      │
+                      ▼
+                  Power BI
+                      │
+                      ▼
+             Real-time/Refresh-
+               driven insights
+```
+
 ## Disclaimer
 
 These examples are provided for educational and demonstration purposes.
