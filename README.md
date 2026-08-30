@@ -93,7 +93,7 @@ Code
 See:
 
 code/01-basic-redcap-api/redcap_api_basic.m
-
+```
 Method 2: Field-Level Data Selection
 
 The second implementation improves control over the data retrieved from REDCap.
@@ -110,6 +110,8 @@ CSV parsing
 Header promotion
 REDCap filter logic
 Reduced unnecessary data transfer
+
+```
 Workflow
 Protected token location
           |
@@ -124,6 +126,7 @@ Protected token location
           |
           v
       Power BI
+```
 Important security note
 
 Field-level selection reduces the amount of data retrieved, but it does not automatically guarantee that PHI/PII is excluded.
@@ -146,6 +149,7 @@ Instead of allowing Power BI to determine the complete set of records and fields
 
 Power BI then requests that report through the REDCap API.
 
+```
 Workflow
 REDCap Project
      |
@@ -161,6 +165,7 @@ Power Query
      |
      v
 Power BI
+```
 
 This approach introduces an additional governance layer between the underlying REDCap project and the reporting environment.
 
@@ -229,7 +234,7 @@ Power BI data model
 Power BI workspace and access controls
 
 The preferred approach is to minimize sensitive data as early in the pipeline as practical.
-
+```
 Project Architecture
 
 The overall architecture demonstrated in this repository is:
@@ -268,6 +273,8 @@ For the report-based approach:
                     |
                     v
                 Power BI
+
+```
 Prerequisites
 
 The examples assume access to:
