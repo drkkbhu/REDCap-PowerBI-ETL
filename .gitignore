@@ -1,0 +1,41 @@
+# REDCap credentials
+*.token
+*.key
+*.secret
+token.txt
+TOKEN.txt
+credentials.txt
+secrets.txt
+
+# Environment/configuration files
+.env
+.env.*
+config.local.*
+settings.local.*
+
+# Local data files
+*.csv
+*.xlsx
+*.xls
+*.sav
+*.sas7bdat
+*.rds
+*.parquet
+
+# Sensitive exports
+data/
+exports/
+raw_data/
+processed_data/
+
+# Power BI local files
+*.pbix
+*.pbit
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
